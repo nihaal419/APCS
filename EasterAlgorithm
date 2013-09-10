@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+class EasterAlgorithm
+{
+  public static void main(String [] args)
+  {
+    // Prompt user for an Easter year.
+    String input = JOptionPane.showInputDialog(null,"Enter a 4 digit year.");
+    // This is the year in an integer type.
+    // parseint changes the input into number format.
+    int x = Integer.parseInt(input);
+    //Start algorithm for change to the date of Easter.
+    int a = x % 19;
+    int b = x / 100;
+    int c = x % 100;
+    int d = b / 4;
+    int e = b % 4;
+    int g = ((8 * b) + 13) / 25;
+    int h = (((((19 * a) + b) - d) - g) + 15) % 30;
+    int m = (a + (11 * h)) / 319;
+    int j = c / 4;
+    int k = c % 4;
+    int l = (((((2 * e) + (2 * j) - k) - h) + m) + 32) % 7;
+    int n = (((h - m) + l) + 90) / 25;
+    int p = ((((h - m) + l) + n) + 19) % 32;
+    JOptionPane.showMessageDialog(null,"Easter Sunday is on " + n + "/" + p + "/" + input);
+  }
+}
