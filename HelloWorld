@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+
+class HelloWorld 
+{   
+  public static void main(String [] args)
+  {     
+    ImageIcon icon = new ImageIcon("World.png");
+    JOptionPane.showMessageDialog(null,"Hello World!", "HelloWorld",JOptionPane.PLAIN_MESSAGE,icon);
+    //System.out.println("HelloWorld");
+  }
+}
