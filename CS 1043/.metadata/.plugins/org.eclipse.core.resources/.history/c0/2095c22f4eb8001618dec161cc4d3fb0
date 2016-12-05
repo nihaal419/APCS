@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class GolfDriver {
+	public static void main(String [] args){
+		Scanner console = new Scanner(System.in);
+		Scanner fields = null;
+		
+		final int MAX_STROKES = 9;
+		int count = 0;
+		Golfer [] strokes = new Golfer [5];
+		
+		while(count<MAX_STROKES){
+			System.out.println("Please enter the golfer's name: ");
+			String name = console.next();
+			int [] score;
+			for(int i=0; i<MAX_STROKES; i++){
+				score = new int [MAX_STROKES];
+				System.out.println("Please enter a score: ");
+				score[i] = console.nextInt();
+				//count++;
+				for(int x=0; x<5; x++){
+					Golfer a = new Golfer(name, score);
+					strokes[x] = a;
+					count++;
+				}
+			}
+		}
+		console.close();
+	}
+}

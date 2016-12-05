@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MonthlyPayment.java&apos; to &apos;Generating Table/src&apos;&#x0A;- Original project: &apos;MonthlyPayment&apos;&#x0A;- Destination element: &apos;Generating Table/src&apos;&#x0A;- Original element: &apos;MonthlyPayment.java&apos;" description="Copy compilation unit" destination="=Generating Table/src" element1="/src&lt;{MonthlyPayment.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1476385300584" units="1" version="1.0"/>
+</session>
